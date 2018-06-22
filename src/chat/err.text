@@ -1,0 +1,7 @@
+In file included from /home/renming/muduo-tutorial/src/chat/server.cpp:5:0:
+
+/home/renming/muduo-tutorial/src/chat/server.h:31:85: error: no matching function for call to
+‘muduo::net::TcpServer::setMessageCallback(std::_Bind_helper<false, void (Codec::*)
+(std::shared_ptr<muduo::net::TcpConnection>&, muduo::net::Buffer*, muduo::Timestamp),
+Codec*, const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&>::type)’
+server_.setMessageCallback(std::bind(&Codec::onMessage, &codec_, _1, _2, _3));
